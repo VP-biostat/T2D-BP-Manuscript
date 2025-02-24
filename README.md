@@ -32,8 +32,8 @@ The repository is organised into four main folders, each corresponding to a key 
    - Investigate the associations between partitioned PGS and clinical outcomes and complications within the UK Biobank using [_comorbidPGS_](https://github.com/VP-biostat/comorbidPGS)
    - Make cumulative hazard trends for T2D-BP complications on individuals stratified by partitioned PGS using Cox proportional hazards models from [_survival_](https://CRAN.R-project.org/package=survival)
 
-## Visual abstract
-- **Figure 1** (`figures/Figure1.pdf`): Overview of the study design, genetic clustering approach, and PGS validation framework.
+## Study Design and Analysis Workflow
+![Study design and Analysis Workflow](https://raw.githubusercontent.com/VP-biostat/T2D-BP-Manuscript/main/figures/Figure1.png)
 
 ## Contact
 For inquiries, please contact the corresponding author(s) as indicated in the manuscript.
