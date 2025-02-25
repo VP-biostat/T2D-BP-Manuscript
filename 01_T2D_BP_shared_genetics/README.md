@@ -19,3 +19,10 @@
 --w-ld-chr [ldsc path]/ldsc/baselineLD/LDscore. \
 --ref-ld-chr [ldsc path]/ldsc/baselineLD/LDscore.
 ```
+
+
+## Reciprocal risk prediction using PGS for T2D/BP
+
+1. Build 4 PGS using your cohort and T2D/BP GWASes (beware of sample overlap between the base and target data).
+
+2. Uses [_comorbidPGS_](https://github.com/VP-biostat/comorbidPGS) as done in the R script `comorbidPGS_T2D_BP_PGS_analysis.R`
