@@ -16,5 +16,5 @@
 4. Compare this clustering with other methods such as [_bNMF clustering_](https://github.com/gwas-partitioning/bnmf-clustering/) with `comparison_bnmf_hieclu.R`
 
 5. Compare the clusters with latest T2D clustering from the litterature: 
-   - [T2D hierarchical clustering published](https://doi.org/10.1038/s41586-024-07019-6) with this R script ``
-   - [T2D bNMF clustering](https://doi.org/10.1038/s41591-024-02865-3) with this R script ``
+   - [T2D hierarchical clustering published](https://doi.org/10.1038/s41586-024-07019-6) with this R script `comparison_wsnp_cluster_suzuki.R`
+   - [T2D bNMF clustering](https://doi.org/10.1038/s41591-024-02865-3) with this R script `comparison_wsnp_cluster_ksmith.R`
