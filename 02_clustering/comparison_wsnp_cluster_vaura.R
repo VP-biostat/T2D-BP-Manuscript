@@ -10,7 +10,7 @@ cluster[, Vaura_snp := "none"]
 cluster[, Vaura_r2 := 0]
 cluster[, Vaura_cluster := "unassigned"]
 
-#use vqurq et al. supplementary table
+#use vaura et al. supplementary table
 vaura <- data.table(read_excel("./vaura_et_al_bp_clustering.xlsx", sheet = 1))
 vaura <- vaura[!is.na(Group),] #remove NA
 vaura[, `:=`(Chromosome = nafill(Chr, type = "locf"))] #fill the chromosome col
