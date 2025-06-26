@@ -1,6 +1,10 @@
 library(data.table)
 
-df <- fread("./pgs_after_clustering/bp_t2d_clustering_new_phenos2_5clusters_ukb_imp_6PCs_unweighted_df.tsv") #Pheno file + partitioned PGS extracted from UKB
+#df represents a data.table object with individual-level PGS and phenotype (T2D, BP, hypertension status)
+df <- fread("your df path") #Pheno file + partitioned PGS extracted from UKB
+
+#threshold is the percentile threshold you want to use to extract the top distribution of each PGS.
+#in the manuscript we used both 0.9 and 2/3
 df[, comorbidity := (`T2D.all` == 1 & hypertension == T)]
 df[, `1_over0.9` := (`1.z.T2D` > quantile(`1.z.T2D`, 0.9))]
 df[, `1test_over0.9` := (`1.z.T2D.test` > quantile(`1.z.T2D.test`, 0.9))]
@@ -10,6 +14,7 @@ df[, `2_over0.9` := (`2.z.T2D` > quantile(`2.z.T2D`, 0.9))]
 df[, `3_over0.9` := (`3.z.T2D` > quantile(`3.z.T2D`, 0.9))]
 df[, `4_over0.9` := (`4.z.T2D` > quantile(`4.z.T2D`, 0.9))]
 df[, `5_over0.9` := (`5.z.T2D` > quantile(`5.z.T2D`, 0.9))]
+#you can add any PGS here to compare, e.g., normal weighted T2D or BP PGS using Pruning + Thresholding  
 
 prs = c(grep(pattern = ".z.", names(df), value = T), 
         "2.z.T2DAND3.z.T2D",
