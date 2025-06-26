@@ -13,8 +13,11 @@
 
 3. Convert the actual hierarchical clustering into a nice and workable plot with `hierarchical_clustering_visualizer.R`
 
-4. Compare this clustering with other methods such as [_bNMF clustering_](https://github.com/gwas-partitioning/bnmf-clustering/) with `comparison_bnmf_hieclu.R`
+4. Compare this clustering with another clustering using different parameters (e.g., imputation methods or adjusting for GWAS sample size) with `comparison_two_clusterings.R`
 
-5. Compare the clusters with latest T2D clustering from the litterature: 
+5. Compare this clustering with other methods such as [_bNMF clustering_](https://github.com/gwas-partitioning/bnmf-clustering/) with `comparison_bnmf_hieclu.R`
+
+6. Compare the clusters with latest T2D clustering from the litterature: 
    - [T2D hierarchical clustering published](https://doi.org/10.1038/s41586-024-07019-6) with this R script `comparison_wsnp_cluster_suzuki.R`
    - [T2D bNMF clustering](https://doi.org/10.1038/s41591-024-02865-3) with this R script `comparison_wsnp_cluster_ksmith.R`
+   - [BP bNMF clustering](https://doi.org/10.1161/CIRCGEN.121.003583) with this R script `comparison_wsnp_cluster_vaura.R`
