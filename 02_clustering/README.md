@@ -21,3 +21,4 @@
    - [T2D hierarchical clustering published](https://doi.org/10.1038/s41586-024-07019-6) with this R script `comparison_wsnp_cluster_suzuki.R`
    - [T2D bNMF clustering](https://doi.org/10.1038/s41591-024-02865-3) with this R script `comparison_wsnp_cluster_ksmith.R`
    - [BP bNMF clustering](https://doi.org/10.1161/CIRCGEN.121.003583) with this R script `comparison_wsnp_cluster_vaura.R`
+   - [All clusterings, doing sankey plot] with this R script `sankey_plot_snv_clusters_comparisons.R`

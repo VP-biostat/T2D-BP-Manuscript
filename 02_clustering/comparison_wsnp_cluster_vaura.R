@@ -5,7 +5,7 @@ library(data.table)
 token <- 'your LDlink token'
 
 #use the manuscript supplementary tables 
-cluster <- data.table(read_excel("./BP_T2D_Supplementary_Table_240816.xlsx", sheet = 6, skip =1))
+cluster <- data.table(read_excel("YOUR_PATH_TO_SUPPLEMENTARY_DATA_3", sheet = 4, skip =1))
 cluster[, Vaura_snp := "none"]
 cluster[, Vaura_r2 := 0]
 cluster[, Vaura_cluster := "unassigned"]
