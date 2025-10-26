@@ -4,7 +4,7 @@ library(ggplot2)
 library(dplyr)
 library(gridExtra)
 
-st = data.table(read_excel("BP_T2D_Supplementary_Table_240816.xlsx", sheet = 8, skip = 1))
+st = data.table(read_excel("YOUR_PATH_TO_SUPPLEMENTARY_DATA_3", sheet = 6, skip = 1))
 st$`eQTL tissue` = gsub("Not Sun Exposed", "Sun-", st$`eQTL tissue`)
 st$`eQTL tissue` = gsub("Sun Exposed", "Sun+", st$`eQTL tissue`)
 st$`eQTL tissue` = gsub("Esophagus Gastroesophageal", "Esophagus GE", st$`eQTL tissue`)

@@ -1,7 +1,7 @@
 library(data.table)
 library(readxl)
 
-st = data.table(read_excel("BP_T2D_Supplementary_Table_240816.xlsx", sheet = 8, skip = 1))
+st = data.table(read_excel("YOUR_PATH_TO_SUPPLEMENTARY_DATA_3", sheet = 6, skip = 1))
 
 #select tissue
 tissue = "Adipose Subcutaneous"
