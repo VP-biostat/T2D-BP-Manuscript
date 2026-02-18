@@ -1,4 +1,4 @@
-# T2D-BP Manuscript
+# [ Pascat, V., Zudina, L., Maurin, L. et al. Partitioned polygenic scores show mechanistic heterogeneity in type 2 diabetes and hypertension comorbidity. Nat Commun 17, 1446 (2026). ](https://doi.org/10.1038/s41467-025-67449-2)
 
 ## Overview
 This repository contains the data and analysis scripts supporting our manuscript on the genetic relationship between type 2 diabetes (T2D) and blood pressure (BP). The study uses genome-wide association studies (GWAS), partitioned polygenic scores (PGS), colocalization analyses, and enrichment in cis-regulatory elements (cCREs) to identify genetic drivers underlying T2D-BP comorbidities.
